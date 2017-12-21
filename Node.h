@@ -8,9 +8,11 @@ public:
 	Node();
 	Node(int);
 	int GetNodeValue();
+	Node& GetNodeAddress();
+	bool IsNullNextNode();
 	Node* GetNextNode();
 	void LinkedNode(Node*);
-	~Node();
+	virtual~Node();
 	
 };
 

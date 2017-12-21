@@ -8,15 +8,15 @@ int main()
 {
 	
 	LinkList* pList = new LinkList();
-	Node pNode(1);
-	Node pNode2(2);
-	Node pNode3(3);
-	pList->InsertNode(&pNode2);
-	pList->InsertNode(&pNode);
-	pList->InsertNode(&pNode3);
+	Node *pNode1 = new Node(1);
+	Node *pNode2 = new Node(2);
+	Node *pNode3 = new Node(3);
+	pList->InsertNode(pNode1);
+	pList->InsertNode(pNode2);
+	pList->InsertNode(pNode3);
 	pList->PrintfList();
-	int x;
-	std::cin >> x ;
+	pList->~LinkList();
+	
 	return 0;
 }
 
